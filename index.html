@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cheezious</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="cheezious.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Cheezious</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="logo"> <img src="https://em-cdn.eatmubarak.pk/54946/logo/1649325481.png" width="50px" height="50px" /> </div>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#home"><i class="fa-solid fa-magnifying-glass"></i></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#about"><i class="fa-solid fa-circle-user"></i></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#contact"><i class="fa-solid fa-cart-shopping"></i></a>
+      </li>
+    </ul>
+  </div> 
+</nav>
+
+<div class="swiper mySwiper" style="margin-top: 20px;">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide"><img src="https://em-cdn.eatmubarak.pk/54946/web_splash/1718372715.jpg"></div>
+    <div class="swiper-slide"><img src="https://em-cdn.eatmubarak.pk/54946/web_splash/1718372668.jpg"></div>
+    <div class="swiper-slide"><img src="https://em-cdn.eatmubarak.pk/54946/web_splash/1718372589.jpg"></div>
+    <div class="swiper-slide"><img src="https://em-cdn.eatmubarak.pk/54946/web_splash/1723294412.jpg"></div>
+    <div class="swiper-slide"><img src="https://em-cdn.eatmubarak.pk/54946/web_splash/1723791341.jpg"></div>
+  </div>
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-pagination"></div>
+</div>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    spaceBetween: 30,
+    centeredSlides: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+</script>
+
+<!-- Hero Section -->
+<section class="hero bg-light text-center">
+  <div class="container">
+    <h1 class="display-4">Welcome to Cheezious!</h1>
+    <p class="lead">The best cheesy delights in town!</p>
+    <a href="#menu" class="btn btn-primary btn-lg">Explore Menu</a>
+  </div>
+</section>
+
+<!-- Menu Section -->
+<section id="menu" class="py-5">
+  <div class="container">
+    <h2 class="text-center">Our Menu</h2>
+    <div class="row">
+      <!-- Dish 1 -->
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <img src="https://em-cdn.eatmubarak.pk/restaurant_new///dish/16027793711771744869.jpg" class="card-img-top" alt="Dish 1">
+          <div class="card-body">
+            <h5 class="card-title">Cheesy Sticks</h5>
+            <p class="card-text">Freshly Baked Bread Filled With The Yummiest Cheese Blend To Satisfy Your Cravings.</p>
+            <p class="price">Rs 630</p>
+            <button type="button" class="btn btn-danger">Add To Cart</button>
+          </div>
+        </div>
+      </div>
+      <!-- Dish 2 -->
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <img src="https://em-cdn.eatmubarak.pk/restaurant_new///dish/1602778646768992842.jpg" class="rounded float-start" alt="Dish 2">
+          <div class="card-body">
+            <h5 class="card-title">Oven baked wings</h5>
+            <p class="card-text">Fresh Oven Baked Wings Served With Dip Sauce.
+            </p>
+            <p class="price">Rs 600</p>
+            <button type="button" class="btn btn-danger">Add To Cart</button>
+          </div>
+        </div>
+      </div>
+      <!-- Dish 3 -->
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <img src="https://em-cdn.eatmubarak.pk/restaurant_new/54946/54946/dish/1612872495497065653.png" class="card-img-top" alt="Dish 3">
+          <div class="card-body">
+            <h5 class="card-title">Flaming Wings</h5>
+            <p class="card-text">Fresh Oven Baked Wings Tossed In Hot Peri Peri Sauce And Served With Dip Sauce.</p>
+            <p class="price">Rs 650</p>
+            <button type="button" class="btn btn-danger">Add To Cart</button>
+          </div>
+        </div>
+    </div>
+    <!-- Dish 4 -->
+    <div class="col-md-4">
+      <div class="card mb-4">
+        <img src="https://em-cdn.eatmubarak.pk/restaurant_new///dish/16027791221858590131.jpg" class="card-img-top" alt="Dish 3">
+        <div class="card-body">
+          <h5 class="card-title">Calzone Chunks</h5>
+          <p class="card-text">4 Pcs Stuffed Calzone Chunks Served with Sauce & Fries.</p>
+          <p class="price">Rs 1,150</p>
+          <button type="button" class="btn btn-danger">Add To Cart</button>
+        </div>
+      </div>
+  </div>
+  <!-- Dish 5 -->
+  <div class="col-md-4">
+    <div class="card mb-4">
+      <img src="https://em-cdn.eatmubarak.pk/54946/dish_image/1628885324.png" class="card-img-top" alt="Dish 5">
+      <div class="card-body">
+        <h5 class="card-title">Behari Rolls</h5>
+        <p class="card-text">4 Pcs Behari Rolls Stuffed with Yummiest Mix Served with Sauce.</p>
+        <p class="price">Rs 690</p>
+        <button type="button" class="btn btn-danger">Add To Cart</button>
+      </div>
+    </div>
+</div><!-- Dish 6 -->
+<div class="col-md-4">
+  <div class="card mb-4">
+    <img src="https://em-cdn.eatmubarak.pk/54946/dish_image/1629619743.jpg" class="card-img-top" alt="Dish 6">
+    <div class="card-body">
+      <h5 class="card-title">Fettuccine Alfredo Pasta</h5>
+      <p class="card-text">Pasta Made In Yummiest White Sauce With Chicken Chunks Topped With Cheese.</p>
+      <p class="price">Rs 1,050</p>
+      <button type="button" class="btn btn-danger">Add To Cart</button>
+    </div>
+  </div>
+</div>
+  </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="bg-light py-5">
+  <div class="container">
+    <h2 class="text-center">About Us</h2>
+    <p class="text-center">At Cheezious, we pride ourselves on delivering the cheesiest, most delicious meals in town. Whether you're craving burgers, pizzas, or fries, we have something for every cheese lover.</p>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-5">
+  <div class="container">
+    <h2 class="text-center">Contact Us</h2>
+    <form>
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name" placeholder="Your name">
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" id="email" placeholder="Your email">
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea class="form-control" id="message" rows="5" placeholder="Your message"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-4">
+  <p>© 2024 Cheezious - All Rights Reserved</p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
